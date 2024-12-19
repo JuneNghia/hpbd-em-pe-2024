@@ -9,7 +9,7 @@ export interface ILevelDialog {
 
 const DIALOGS: ILevelDialog[] = [
 	{
-		question: 'Em pé tên gì?',
+		question: '자기야, 나 보고 싶어?',
 		answers: ['nhi', 'pevk', 'lelannhi'],
 		hint: '(?) Game này chỉ dành cho pé vk thui...'
 	},
