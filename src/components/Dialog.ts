@@ -9,7 +9,7 @@ export interface ILevelDialog {
 
 const DIALOGS: ILevelDialog[] = [
 	{
-		question: 'Xin chao em pe, de nhan duoc mon qua cua anh pe phai tra loi dung toan bo cau hoi nhe. Dau tien, ten cua em pe?',
+		question: 'De nhan duoc mon qua cua anh pe phai tra loi dung toan bo cau hoi nhe. Dau tien, ten cua em pe?',
 		answers: ['nhi', 'pevk', 'lelannhi'],
 		hint: "Chi nhap duoc ten cua em pe thui"
 	},
