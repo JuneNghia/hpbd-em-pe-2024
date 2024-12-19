@@ -9,14 +9,14 @@ export interface ILevelDialog {
 
 const DIALOGS: ILevelDialog[] = [
 	{
-		question: '자기야, 나 보고 싶어?',
+		question: 'Ten cua em pe?',
 		answers: ['nhi', 'pevk', 'lelannhi'],
-		hint: '(?) Game này chỉ dành cho pé vk thui...'
+		hint: "Chi nhap duoc ten cua em pe thui"
 	},
 	{
 		question:
-			'Ck của pé tên là gì?<br>' +
-			'<span class="dialog-hint">(...ảnh vừa tặng cho pé con camera sony nè)</span>',
+			'Ck của pe ten la gi?<br>' +
+			'<span class="dialog-hint">(anh vua tang cho pe con camera sony nek)</span>',
 		answers: [
 			'ckmap',
 			'junenghia',
@@ -24,10 +24,10 @@ const DIALOGS: ILevelDialog[] = [
 			'nghia',
 			'map'
 		],
-		hint: '(?) Nhìn xuống dưới là thí tên ck!'
+		hint: 'Pe kho, nhin xuong duoi la thay ten ck'
 	},
 	{
-		question: 'Em pé muốn bao nhiêu món quà?',
+		question: 'Em pe muon nhan bao nhieu mon qua?',
 		answers: [],
 		type: 'number'
 	}
