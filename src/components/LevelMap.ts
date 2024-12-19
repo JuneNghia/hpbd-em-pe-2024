@@ -12,7 +12,7 @@ export class LevelMap {
 	private scene: LevelScene;
 	private tiles: Phaser.Tilemaps.Tileset;
 	private background: LevelBackground;
-	private scaling: number = 7;
+	private scaling: number = 3;
 
 	constructor({ scene }: { scene: LevelScene }) {
 		this.scene = scene;
