@@ -28,7 +28,7 @@ const DIALOGS: ILevelDialog[] = [
 	},
 	{
 		question:
-			'Ngay dau tien minh chinh thuc yeu nhau nhau, vk nhap DDMMYYYY la duoc',
+			'Ngay minh chinh thuc yeu nhau, vi du: 19122024',
 		answers: [
 			'20122021'
 		],
@@ -51,6 +51,15 @@ const DIALOGS: ILevelDialog[] = [
 		answers: [
 			'dalat'
 		],
+	},
+	{
+		question:
+			'Pe co dong y ben anh suot cuoc doi nay khong' +
+			'<span class="dialog-hint">(nhap CO hoac KHONG)</span>',
+		answers: [
+			'co'
+		],
+		hint: "Ah duoc, dam nhap KHONG, gruuu >_<"
 	},
 	{
 		question: 'Yeah, pe da hoan thanh het cac cau hoi. Em pe muon nhan bao nhieu mon qua? Nhap so luong nek vk',
