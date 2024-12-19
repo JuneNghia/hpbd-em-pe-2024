@@ -9,63 +9,26 @@ export interface ILevelDialog {
 
 const DIALOGS: ILevelDialog[] = [
 	{
-		question: 'De nhan duoc mon qua cua anh pe phai tra loi dung toan bo cau hoi nhe. Dau tien, ten cua em pe?',
+		question:
+			'De nhan duoc mon qua cua anh pe phai tra loi dung toan bo cau hoi nhe. Dau tien, ten cua em pe?',
 		answers: ['nhi', 'pevk', 'lelannhi'],
-		hint: "Chi nhap duoc ten cua em pe thui"
+		hint: 'Chi nhap duoc ten cua em pe thui',
 	},
 	{
 		question:
 			'Ten cua nguoi ck ma moi co gai deu ao uoc?<br>' +
 			'<span class="dialog-hint">(nguoi vua tang cho pe con camera sony nek)</span>',
-		answers: [
-			'ckmap',
-			'junenghia',
-			'trungnghia',
-			'nghia',
-			'map'
-		],
-		hint: 'Pe kho, nhin xuong duoi la thay ten ck'
+		answers: ['ckmap', 'junenghia', 'trungnghia', 'nghia', 'map'],
+		hint: 'Pe kho, nhin xuong duoi la thay ten ck',
 	},
+
 	{
 		question:
-			'Ngay minh chinh thuc yeu nhau, vi du: 19122024',
-		answers: [
-			'20122021'
-		],
-		hint: 'Chan chua',
-		type: 'number'
+			'Pe co dong y ben anh suot cuoc doi nay khong?' +
+			'<span class="dialog-hint">(nhap CO hoac KHONG, tra loi CO se duoc qua a. ^^)</span>',
+		answers: ['co'],
+		hint: 'Ah duoc, dam nhap KHONG, gruuu >_<',
 	},
-	{
-		question:
-			'So dien thoai cua ck' + '<span class="dialog-hint">(em pe hay quen sdt anh lam)</span>',
-		answers: [
-			'0934945803'
-		],
-		hint: '09*****03',
-		type: 'number'
-	},
-	{
-		question:
-			'Thanh pho ma tui minh se di hen ho khi vk tu Han Quoc ve' +
-			'<span class="dialog-hint">(thanh pho lanh teo ch*m)</span>',
-		answers: [
-			'dalat'
-		],
-	},
-	{
-		question:
-			'Pe co dong y ben anh suot cuoc doi nay khong' +
-			'<span class="dialog-hint">(nhap CO hoac KHONG)</span>',
-		answers: [
-			'co'
-		],
-		hint: "Ah duoc, dam nhap KHONG, gruuu >_<"
-	},
-	{
-		question: 'Yeah, pe da hoan thanh het cac cau hoi. Em pe muon nhan bao nhieu mon qua? Nhap so luong nek vk',
-		answers: [],
-		type: 'number'
-	}
 ];
 
 export class Dialog {
@@ -136,7 +99,7 @@ export class Dialog {
 	}
 
 	private async waitForAnswer(): Promise<number | string> {
-		return new Promise(resolve => {
+		return new Promise((resolve) => {
 			const handleInputKeypress = (e: KeyboardEvent) => {
 				if (e.key.toLowerCase() !== 'enter') return;
 				handleAnswer();
@@ -171,7 +134,7 @@ export class Dialog {
 	): boolean {
 		return (
 			this.currentDialog.type === 'number' ||
-			this.currentDialog.answers.find(a => a === inputAnswer) != null
+			this.currentDialog.answers.find((a) => a === inputAnswer) != null
 		);
 	}
 
