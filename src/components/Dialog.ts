@@ -9,14 +9,14 @@ export interface ILevelDialog {
 
 const DIALOGS: ILevelDialog[] = [
 	{
-		question: 'Ten cua em pe?',
+		question: 'Xin chao em pe, de nhan duoc mon qua cua anh pe phai tra loi dung toan bo cau hoi nhe. Dau tien, ten cua em pe?',
 		answers: ['nhi', 'pevk', 'lelannhi'],
 		hint: "Chi nhap duoc ten cua em pe thui"
 	},
 	{
 		question:
-			'Ck của pe ten la gi?<br>' +
-			'<span class="dialog-hint">(anh vua tang cho pe con camera sony nek)</span>',
+			'Ten cua nguoi ck ma moi co gai deu ao uoc?<br>' +
+			'<span class="dialog-hint">(nguoi vua tang cho pe con camera sony nek)</span>',
 		answers: [
 			'ckmap',
 			'junenghia',
@@ -27,7 +27,33 @@ const DIALOGS: ILevelDialog[] = [
 		hint: 'Pe kho, nhin xuong duoi la thay ten ck'
 	},
 	{
-		question: 'Em pe muon nhan bao nhieu mon qua?',
+		question:
+			'Ngay dau tien minh chinh thuc yeu nhau nhau, vk nhap DDMMYYYY la duoc',
+		answers: [
+			'20122021'
+		],
+		hint: 'Chan chua',
+		type: 'number'
+	},
+	{
+		question:
+			'So dien thoai cua ck' + '<span class="dialog-hint">(em pe hay quen sdt anh lam)</span>',
+		answers: [
+			'0934945803'
+		],
+		hint: '09*****03',
+		type: 'number'
+	},
+	{
+		question:
+			'Thanh pho ma tui minh se di hen ho khi vk tu Han Quoc ve' +
+			'<span class="dialog-hint">(thanh pho lanh teo ch*m)</span>',
+		answers: [
+			'dalat'
+		],
+	},
+	{
+		question: 'Yeah, pe da hoan thanh het cac cau hoi. Em pe muon nhan bao nhieu mon qua? Nhap so luong nek vk',
 		answers: [],
 		type: 'number'
 	}

@@ -186,6 +186,7 @@
 				transition: opacity 0.3s ease-in-out;
 				transform: translateY(20px);
 			}
+
 			input::-webkit-outer-spin-button,
 			input::-webkit-inner-spin-button {
 				/* display: none; <- Crashes Chrome on hover */
@@ -197,7 +198,20 @@
 				-moz-appearance: textfield; /* Firefox */
 			}
 
-			.created-by {
+			.created-by-left {
+				position: fixed;
+				bottom: 20px;
+				left: 20px;
+				font-size: 10px;
+				font-family: 'Arcade';
+				color: #000;
+				background-color: rgba(255, 255, 255, 0.6);
+				border-radius: 4px;
+				padding: 4px 8px;
+				user-select: none;
+			}
+
+			.created-by-right {
 				position: fixed;
 				bottom: 20px;
 				right: 20px;
@@ -283,22 +297,27 @@
 			</div>
 		</div>
 
-		<div class="created-by">
-			Created by
-			<a
-				class="profile-link"
-				href="https://www.facebook.com/dev.nghia"
-				target="_blank"
-			>
-				JuneNghia
-			</a>
+		<div>
+			<div class="created-by-left">
+				Chuc em pe sinh nhat vui ve, va mai mai yeu anh nha
+			</div>
+			<div class="created-by-right">
+				Created by
+				<a
+					class="profile-link"
+					href="https://www.facebook.com/dev.nghia"
+					target="_blank"
+				>
+					JuneNghia
+				</a>
+			</div>
 		</div>
 
 		<iframe
 			id="audio"
 			src="assets/audio/silence.ogg"
 			allow="autoplay"
-			style="display:none"
+			style="display: none"
 		></iframe>
 		<audio id="player">
 			<source id="player-src" src="assets/audio/breezin.ogg" type="audio/ogg" />
